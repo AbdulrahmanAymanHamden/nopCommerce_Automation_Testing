@@ -11,6 +11,7 @@ import org.testng.Assert;
 public class SD05_HoverCategory {
 
     P05_HoverCategory Hover_Page = new P05_HoverCategory();
+    String SubCategoryText ;
 
     @When("User Hovers to Computer Category")
     public void Hover_to_Category() throws InterruptedException {
@@ -22,13 +23,9 @@ public class SD05_HoverCategory {
     @And("User Selects Desktops sub-category")
     public void Select_SubCategory()
     {
-        String SubCategoryText = Hover_Page.Desktop_SubCategory().getText().toLowerCase().trim();
+        SubCategoryText = Hover_Page.Desktop_SubCategory().getText().toLowerCase().trim();
 
         Hover_Page.Desktop_SubCategory().click();
-
-        String PageTitle = Hover_Page.Desktop_PageTitle().getText().toLowerCase().trim();
-
-        Assert.assertTrue(PageTitle.contains(SubCategoryText));
 
     }
 
@@ -36,5 +33,9 @@ public class SD05_HoverCategory {
     public void Direct_subCategory_Page(String Url)
     {
         Assert.assertEquals(Hooks.driver.getCurrentUrl() , Url);
+
+        String PageTitle = Hover_Page.Desktop_PageTitle().getText().toLowerCase().trim();
+
+        Assert.assertTrue(PageTitle.contains(SubCategoryText));
     }
 }

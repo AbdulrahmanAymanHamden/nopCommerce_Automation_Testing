@@ -5,7 +5,7 @@ Feature: User could register with a new account
     And   User selects a gender Type "Male"
     And   User Enters Firstname "Abdulrahman" and Lastname "Ayman"
     And   User Select His date of birth Day "1" Month "10" Year "1997"
-    And   User Enters Email Address "Test@example.com"
+    And   User Enters Email Address "Test1@example.com"
     And   User fills Password fields "Password123" "Password123"
     When  User Clicks on Register Button
     #######Expected Result#########

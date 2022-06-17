@@ -3,6 +3,7 @@ org\example\Pages\P03_Switch_Currency.class
 org\example\Pages\P07_FollowUs.class
 org\example\StepDefinition\SD02_Login.class
 org\example\StepDefinition\SD07_FollowUs.class
+org\example\Runner\testRunner.class
 org\example\StepDefinition\SD08_WishList.class
 org\example\StepDefinition\SD06_Slider.class
 org\example\StepDefinition\SD03_Search.class
@@ -14,5 +15,4 @@ org\example\Pages\P04_Search.class
 org\example\Pages\P05_HoverCategory.class
 org\example\StepDefinition\SD01_Registration.class
 org\example\Pages\P02_Login.class
-org\example\Runner\Runner.class
 org\example\StepDefinition\SD03_Switch_Currency.class
